@@ -91,10 +91,12 @@ class ViewController: UIViewController {
             numberOnScreen = Double(label.text!)!
             numberOnScreen = numberOnScreen * -1
             label.text = String(numberOnScreen)
+            previousNumber = 0
         }else if(sender as AnyObject).tag == 18{
             numberOnScreen = Double(label.text!)!
             let num = Int(numberOnScreen)
             label.text = String(num) + "."
+            previousNumber = 0
         }
         
     }
